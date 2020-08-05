@@ -6,6 +6,7 @@ FactoryBot.define do
     association :owner
 
     trait :with_notes do
+      after(:stub) { |project| create_list(:note, 5, project: project) }
       after(:create) { |project| create_list(:note, 5, project: project) }
     end
 

@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Project, type: :model do
+  # include_context "mysql2 stubbed setup"
+
   it { is_expected.to validate_uniqueness_of(:name).scoped_to(:user_id) }
 
   describe "late status" do
