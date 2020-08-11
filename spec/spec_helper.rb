@@ -93,4 +93,12 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  # Garbage collection deferred
+  # config.before :all do
+  #   DeferredGarbageCollection.start
+  # end
+  #
+  # config.after :all do
+  #   DeferredGarbageCollection.reconsider
+  # end
 end

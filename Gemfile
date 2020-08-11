@@ -19,6 +19,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8.0'
   gem 'factory_bot_rails', '~> 4.10.0'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'parallel_tests', git: 'https://github.com/grosser/parallel_tests'
+  gem 'spring-commands-parallel-tests'
+  gem 'test-prof'
+  gem 'ruby-prof', '>= 0.16.0', require: false
 end
 
 group :development do
